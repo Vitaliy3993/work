@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $main-color;
+}
+body, html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+  
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@import 'blocks/info';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/tags';
+@import 'blocks/posts';
+@import 'blocks/money';
+@import 'blocks/footer';
+@import 'blocks/mobileMenu';
+
+@import 'media/media';

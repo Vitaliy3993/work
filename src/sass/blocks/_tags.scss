@@ -1,0 +1,35 @@
+.tags {
+    margin-top: 30px;
+    width: 100%;
+    &__wrapper {
+        padding: 0 32px 0 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        min-height: 60px;
+        background-color: #F7F7F7;
+    }
+    &__left {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 745px;
+    }
+    &__item {
+        color: $second-color;
+        cursor: pointer;
+        &__black {
+            color: $second-text-color;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        width: 145px;
+        list-style-type: none;
+    }
+}

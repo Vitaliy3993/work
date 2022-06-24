@@ -1,0 +1,52 @@
+.promo {
+    &__wrapper {
+        display: flex;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .101961));
+    }
+    &__img {
+        height: 100%;
+        object-fit: contain;
+        cursor: pointer;
+    }
+    &__text__wrapper {
+        width: 40%;
+        padding: 59px 60px 40px 60px;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__descr {
+        font-weight: 300;
+        cursor: pointer;
+    }
+    &__post {
+        margin-top: 84px;
+        display: flex;
+        &__name {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #323642;
+            margin-right: 8px;
+        }
+        &__data {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #889099;
+        }
+    }
+    &__type__descr {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $second-color;
+        margin-top: 12px;
+    }
+}
