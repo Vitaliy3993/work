@@ -105,17 +105,22 @@ window.addEventListener('DOMContentLoaded', () => {
       menu.classList.add('active');
       let scroll = calcScroll();
       document.body.style.marginRight = `${scroll}px`;
+      document.body.style.overflow = 'hidden';
     });
 
     function closeMenu() {
       overlay.addEventListener('click', () => {
         menu.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.marginRight = `0px`;
       });
     }
 
     document.addEventListener('keydown', e => {
       if (e.code === "Escape" && menu.classList.contains('active')) {
         menu.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.marginRight = `0px`;
       }
     });
 

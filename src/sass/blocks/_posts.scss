@@ -16,13 +16,15 @@
         &__block {
             margin-top: 40px;
             display: flex;
-            justify-content: space-between;
         }
         &__img {
             width: 280px;
             height: 180px;
             margin-right: 40px;
             cursor: pointer;
+            &__mr20 {
+                margin-right: 20px;
+            }
         }
         &__text {
             &__wrapper {

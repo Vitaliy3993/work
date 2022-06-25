@@ -247,19 +247,28 @@
         height: 70px;
         &__text {
             margin-right: 0;
+            font-size: 11px;
             &__learn {
                 display: flex;
                 grid-column: 2/3;
                 grid-row: 1/2;
-                margin-left: 20px;
+                margin-left: 40px;
+            }
+            &__cable {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            &__ip {
+                grid-column: 1/2;
+                grid-row: 2/3;
             }
             &__wrapper {
                 padding-top: 10px;
                 display: grid;
-                grid-template-columns: repeat(2,58%);
+                grid-template-columns: 170px 140px;
+                column-gap: 20px;
                 grid-template-rows: repeat(2, 17px);
                 row-gap: 8px;
-                justify-content: space-between;
                 height: 100%;
                 align-content: center;
             }
@@ -296,6 +305,7 @@
             &__img {
                 width: 100%;
                 height: auto;
+                margin-right: 0;
             }
             &__text__wrapper {
                 margin-top: 20px;
@@ -303,6 +313,12 @@
             }
         }
         &__right {
+            width: 100%;
+            &__info {
+                &__wrapper {
+                    width: 100%;
+                }
+            }
             &__adv {
                 img {
                     width: 100%;
@@ -318,6 +334,14 @@
         &__title {
             font-size: 32px;
             width: 100%;
+        }
+        &__package {
+            &__wrapper {
+                width: 100%;
+            }
+            &__item {
+                max-width: 315px;
+            }
         }
         &__pay {
             &__wrapper {
